@@ -1,0 +1,195 @@
+/*1- html elements 
+2- ids 
+3-class 
+4-data anime 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* html elements */
+body {
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+
+}
+
+/*ids*/
+#menu_frontal{
+  background-color: #0d78f2;
+}
+#apresentacao {
+  background-color: rgb(0, 40, 242);
+  padding: 5%;
+  align-items: center;
+}
+#img_avatar{
+  height: 25%;
+  width: 25%;
+  border-radius: 50%;
+}
+#img_avatar:hover{
+  width: 29%;
+  height: 29%;
+  transition: 0.5s;
+}
+
+#text-apresentacao {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#alinhar_apresentacao{
+  display: flex;
+  justify-content: space-between;
+}
+#menu {
+  display: flex;
+  justify-content: center;
+}
+/*class*/
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  background-color: #0026ff;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 50px;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0e0a42;
+  transform: translateY(-50%);
+}
+
+.timeline-item-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #110df2; 
+}
+
+.nav-link{
+  color: rgb(255, 255, 255);
+ transition: all 0.4s;
+}
+.nav-link:hover{
+  color: rgb(227, 76, 34);
+  font-size: 120%;
+  text-shadow: 2px 2px 4px rgb(rgb(102, 110, 216));
+}
+.custom-icon {
+  width: 20%;
+  height: 20%;
+  font-size: 20%; 
+}
+
+.trabalhador{
+  width: 50%;
+  height: 50%;
+  padding: 10%;
+}
+
+.titulo {
+  font-family: "Lexend", sans-serif;
+  font-size: 500%;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgb(19, 20, 24);
+  
+}
+
+.sub_titulo {
+  font-family: "Chivo", sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgb(19, 20, 24);
+}
+
+.img_apresentar {
+  width: 15%;
+  height: 15%;
+}
+.icone-linkedin{
+  color: white;
+  font-size: 750%;
+  margin-right: 35%;
+  margin-top: auto;
+  margin-bottom: auto;
+  transition: all 0.7s;
+}
+.icone-linkedin:hover{
+  color: white;
+  font-size: 950%;
+  margin-right: 25%;
+}
+.img_his{
+  height: 25%;
+  width: 25%;
+  transition: all 0.8s;
+}
+.img_his:hover{
+  height: 65%;
+  width: 65%;
+}
+.histext{
+  transition: all 0.6s;
+}
+.histext:hover{
+   font-size: 175%;
+}
+.img_frame{
+  width: 65%;
+  height: 65%;
+}
+/*data anime*/
+[data-anime] {
+  opacity: 0;
+  transition: 1s;
+}
+
+[data-anime="down"] {
+  transform: translate3d(0, -100%, 0);
+}
+
+[data-anime="up"] {
+  transform: translate3d(0, 100%, 0);
+}
+
+[data-anime="left"] {
+  transform: translate3d(-100%, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(50px, 0, 0);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
